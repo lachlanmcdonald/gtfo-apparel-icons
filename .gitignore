@@ -1,0 +1,19 @@
+# Disallow exports from AssetRipper
+*.tga
+*.png
+*.dll
+*.unity
+*.txt
+*.wem
+*.bnk
+*.cs
+*.xml
+*.prefab
+*.meta
+*.json
+
+# Allow existing extracts
+!GameData_VanityItemsTemplateDataBlock_bin.json
+!Palette*.prefab
+!palette.json
+!names.json
