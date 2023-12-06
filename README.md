@@ -1,6 +1,6 @@
 # gtfo-apparel-icons
 
-> Generate SVG's for the apparel colour schemes.
+> Generate SVG's for the apparel colour schemes in GTFO.
 
 ## Setup
 
