@@ -53,3 +53,11 @@ python extract_palette.py
 ```sh
 python generate_icons.py
 ```
+
+## Clean-up
+
+After export, unecessary files can be deleted with:
+
+```sh
+git clean -f -X .\GTFO\
+```
