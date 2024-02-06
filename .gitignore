@@ -11,9 +11,6 @@
 *.prefab
 *.meta
 *.json
+*.prefab
 
-# Allow existing extracts
-!GameData_VanityItemsTemplateDataBlock_bin.json
-!Palette*.prefab
-!palette.json
-!names.json
+!.vscode/*
