@@ -3,5 +3,14 @@
 		"editor.defaultFormatter": "eeyore.yapf",
 		"editor.formatOnSave": true,
 		"editor.formatOnSaveMode": "file"
-	}
+	},
+	"cSpell.words": [
+		"GTFO",
+		"modman",
+		"MTFO",
+		"sharedassets",
+		"steamapps",
+		"USERPROFILE",
+		"VALIGN"
+	]
 }
