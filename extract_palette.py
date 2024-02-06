@@ -1,6 +1,8 @@
-from os import walk, path
+from os import walk, path, makedirs
+from pathlib import Path
 import yaml
 import json
+
 
 def find_palettes(directory):
 	temp = []
@@ -10,11 +12,13 @@ def find_palettes(directory):
 				temp.append(path.join(root, file))
 	return temp
 
+
 def rgb_to_hex(d):
 	r = int(d['r'] * 255)
 	g = int(d['g'] * 255)
 	b = int(d['b'] * 255)
 	return "#{:02x}{:02x}{:02x}".format(r, g, b)
+
 
 def extract_palette(directory):
 	palette_files = find_palettes(directory)
@@ -24,7 +28,7 @@ def extract_palette(directory):
 		with open(palette_path, mode='r', encoding='utf8') as f:
 			raw = f.read()
 			mono_index = raw.index("MonoBehaviour:")
-			data = yaml.safe_load(raw[mono_index:])
+			data = yaml.safe_load(raw[mono_index :])
 
 			assert 'MonoBehaviour' in data
 			assert 'm_primaryTone' in data['MonoBehaviour']
@@ -54,6 +58,7 @@ def extract_palette(directory):
 			]
 	return palette
 
+
 def extract_names(directory):
 	with open(path.join(directory, 'GameData_VanityItemsTemplateDataBlock_bin.json'), mode='r', encoding='utf8') as f:
 		data = json.load(f)
@@ -67,10 +72,14 @@ def extract_names(directory):
 			lang[basename] = block['publicName']
 	return lang
 
-with open('names.json', 'w+') as f:
+
+DIR = Path('exports')
+DIR.mkdir(exist_ok=True)
+
+with Path(DIR, 'names.json').open('w+') as f:
 	names = extract_names(path.dirname(__file__))
 	json.dump(names, f, indent=2, sort_keys=True)
 
-with open('palette.json', 'w+') as f:
+with Path(DIR, 'palette.json').open('w+') as f:
 	palette = extract_palette(path.dirname(__file__))
 	json.dump(palette, f, indent=2, sort_keys=True)
