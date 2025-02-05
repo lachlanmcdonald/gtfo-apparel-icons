@@ -4,7 +4,7 @@
 
 ## Setup
 
-As prefab names and in-game labels do not match, so multiple steps are required to extract the necessary files and match with their in-game label.
+As prefab names and in-game labels do not match, multiple steps are required to extract the necessary files and match with their in-game label.
 
 This process will have to be run whenever GTFO's palettes are updated. The path provided may also change between versions of GTFO and the tooling below. These files have not been included within this repository as they are copyrighted.
 
