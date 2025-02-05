@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1455313696465760
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4856233558130876}
+  - component: {fileID: 114099374905575556}
+  m_Layer: 0
+  m_Name: Palette014Overdrive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4856233558130876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455313696465760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114099374905575556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455313696465760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000000deadbeef15deadf00d0000000, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_primaryTone:
+    m_color: {r: 0.20247418, g: 0.21001492, b: 0.24528301, a: 1}
+    m_texture: {fileID: 0}
+    m_materialOverride: -1
+  m_secondaryTone:
+    m_color: {r: 0.10588236, g: 0.22352943, b: 0.30980393, a: 1}
+    m_texture: {fileID: 0}
+    m_materialOverride: -1
+  m_tertiaryTone:
+    m_color: {r: 0.34901962, g: 0.08235294, b: 0.09019608, a: 1}
+    m_texture: {fileID: 0}
+    m_materialOverride: -1
+  m_quaternaryTone:
+    m_color: {r: 0.3490566, g: 0.08067818, b: 0.09077281, a: 1}
+    m_texture: {fileID: 0}
+    m_materialOverride: -1
+  m_quinaryTone:
+    m_color: {r: 0.1042631, g: 0.22189267, b: 0.31132078, a: 1}
+    m_texture: {fileID: 0}
+    m_materialOverride: -1
+  m_textureTiling: 0.5
