@@ -1,6 +1,6 @@
 {
 	"recommendations": [
-		"eeyore.yapf",
+		"charliermarsh.ruff",
 		"ms-python.python"
 	]
 }

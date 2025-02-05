@@ -39,5 +39,5 @@ for prefab_name, palette in PALETTES.items():
         safe_name = re.sub(r"[^a-z0-9]", "_", name.lower().strip())
         svg_path = SVG_PATH / f"palette-{safe_name}.svg"
 
-        with svg_path.open("w+", encoding="utf-8", newline='\n') as f:
+        with svg_path.open("w+", encoding="utf-8", newline="\n") as f:
             f.write(svg)
