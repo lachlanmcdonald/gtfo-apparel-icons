@@ -77,10 +77,10 @@ def extract_names(directory):
 DIR = Path("exports")
 DIR.mkdir(exist_ok=True)
 
-with Path(DIR, "names.json").open("w+") as f:
+with Path(DIR, "names.json").open("w+", encoding="utf-8", newline="\n") as f:
     names = extract_names(path.dirname(__file__))
     json.dump(names, f, indent=2, sort_keys=True)
 
-with Path(DIR, "palette.json").open("w+") as f:
+with Path(DIR, "palette.json").open("w+", encoding="utf-8", newline="\n") as f:
     palette = extract_palette(path.dirname(__file__))
     json.dump(palette, f, indent=2, sort_keys=True)
